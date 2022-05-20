@@ -1,0 +1,2 @@
+# pdp_demo
+这是一个PDP方案的测试。如果想要使用，你需要先修改makefile文件，设置sdk和ssl的相关位置，之后运行source命令和make命令，最后会产生一个TestApp文件，即为最终pdp程序。
