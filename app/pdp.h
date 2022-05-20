@@ -38,7 +38,7 @@
 #include <string.h>
 
 
-// #define DEBUG_MODE
+#define DEBUG_MODE
 
 /* Using safe primes is required if you want PDP to be provably secure.  
  * Key generation is slower as a side effect */

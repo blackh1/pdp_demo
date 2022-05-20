@@ -47,14 +47,22 @@ else
 	OS_ID=2
 endif
 
-all:
+all:speed
+	$(MAKE) -f lib.mk all
 	$(MAKE) -f sgx_u.mk LINUX_SGX_BUILD=$(LINUX_SGX_BUILD) all
 	$(MAKE) -f sgx_t.mk LINUX_SGX_BUILD=$(LINUX_SGX_BUILD) all
 
 test: all
 	$(MAKE) -f sgx_u.mk test
 
-clean:
+clean:cleanspeed
+	$(MAKE) -f lib.mk clean
 	$(MAKE) -f sgx_u.mk clean
 	$(MAKE) -f sgx_t.mk clean
 
+speed:speed.c
+	$(VCC) $^ -o $@
+	@echo "CC <= speed"
+
+cleanspeed:
+	@rm -f testfile/*.tag test speed-tag.log speed-verify.log speed
