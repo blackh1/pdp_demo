@@ -1,5 +1,5 @@
 UNTRUSTED_DIR=app
-PDP_DIR=app/pdp
+PDP_DIR=pdp
 PDP_C_Files := $(wildcard $(PDP_DIR)/*.c)
 PDP_C_Objects := $(PDP_C_Files:.c=.o)
 TARGET=libpdp.a
