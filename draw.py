@@ -8,10 +8,9 @@ def draw_pic(filename):
         y=[]
         for i in data:
             s=i.split(" ")
-            y.append(s[5])
+            y.append(float(s[5]))
         x=[2**i for i in range(0,11)]
         plt.figure(figsize=(10,6))
-        plt.axes(xscale="log")
         plt.plot(x,y,"r-")
         plt.xlabel("Size of data(MB)")
         plt.ylabel("Cost time(sec)")
