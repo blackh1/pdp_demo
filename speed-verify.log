@@ -1,0 +1,11 @@
+verify 1MB size file need 0.152570 sec(s).
+verify 2MB size file need 0.176312 sec(s).
+verify 4MB size file need 0.274740 sec(s).
+verify 8MB size file need 0.504225 sec(s).
+verify 16MB size file need 0.931031 sec(s).
+verify 32MB size file need 1.641441 sec(s).
+verify 64MB size file need 3.265469 sec(s).
+verify 128MB size file need 6.387078 sec(s).
+verify 256MB size file need 12.694017 sec(s).
+verify 512MB size file need 24.837739 sec(s).
+verify 1024MB size file need 48.634167 sec(s).
